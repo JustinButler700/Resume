@@ -1,0 +1,167 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\customItem}[2]{
+  \small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\item{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\itemListStart}{\begin{itemize}}
+\newcommand{\itemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/JustinButler700}{\Large Justin Butler}} & Email : \href{mailto:justinbutler700@gmail.com}{justinbutler700@gmail.com}\\
+  \href{https://github.com/JustinButler700}{https://github.com/JustinButler700} & Mobile : Redacted on Github \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Amazon}{Irvine, CA}
+      { \textbf{Software Engineer}}{August 2023 - Present}
+      \itemListStart
+      \item{Optimized Echo device memory utilization by transitioning IPC libraries.}
+      \item{Resolved Echo device display rendering bugs in C++ by analyzing logs and intuitively fixing misbehaving functions, enhancing user interface experience.}
+      \item{Built integration testing bots using Python to ensure code convention and quality standards.}
+      \itemListEnd
+
+
+    \resumeSubheading
+      {Wicis Health}{San Marcos, CA}
+      {Freelance Software Engineer}{March 2023 - October 2023}
+      \itemListStart
+        \item
+          {Created and maintained relational databases, with AWS RDS, and webhooks with AWS Lambda to ensure scalable management of data.}
+        \item
+          {Engineered a live email notification system to monitor vital data from telehealth devices, employing AWS SES for swift alerts to patients' physicians upon detection of abnormal readings.}
+      \itemListEnd
+
+
+    \resumeSubheading
+      {Amazon}{Irvine, CA}
+      {Software Engineer Intern}{May 2022 - Aug 2022}
+      \itemListStart
+        \item
+          {Achieved a 100x reduction in Bluetooth latency on Alexa Gadgets by creating an Android backend service using Java, reducing latency from 600ms to a TP90 of less than 5ms.}
+        \item
+          {Developed latency profiling Alexa skills using Node.js and APL which ensured accurate RTT calculations.}
+      \itemListEnd
+
+    \resumeSubheading
+      {Freelance}{Murrieta, CA}
+      {Data Structures \& Assembly Language Tutor}{September 2020 - September 2021}
+      \itemListStart
+        \item
+          {Guided students in mastering data structures and algorithms by providing personalized coaching, resulting in a more comprehensive understanding of the material.}
+      \itemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/CS-441-Group-8/registore-electron}{\textbf{Point of Sales System : }}}
+      {Developed a point-of-sale system using Typescript, GraphQL, and Electron.js. The system seamlessly integrates inventory management, accounts payable, and checkout into a user-friendly application.}
+    \resumeSubItem{\href{https://twitter.com/MemeAutomaton}{\textbf{Twitter Meme Bot : }}}
+      {Developed and launched a Twitter meme bot using Java, Twitter4J, and the Twitter developer API. The bot was created as a fun personal project.}
+    \resumeSubItem{\textbf{Alexa APL Extension : }}
+      {Created the "Gadgets extension" for Amazon Echo devices that utilizes async Protobuf packet transmission and reception to reduce Bluetooth latency significantly.}
+    \resumeSubItem{\href{http://3.101.224.164:3000/}{\textbf{Zillow Clone : }}}
+      {Built a React based, proof of concept Zillow clone project to be presented to JP Morgan Chase. (Hosted on an AWS EC2 )}
+  
+  \resumeSubHeadingListEnd
+
+  %--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: C++, Java, Python, Javascript, C, C\#, SQL, GraphQL, BASH, PHP, Kotlin, x86, ARM, Ruby, Typescript}
+      \hfill
+    }
+    \item{
+    \textbf{Technologies / Frameworks}{: AWS, GCP, Django, Docker, React, Gradle, Angular, Electron, Jira, Maven, Linux, Git, MongoDB, GoogleTest}
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University San Marcos}{San Marcos, CA}
+      {Bachelors of Science in Computer Science;  GPA: 3.80}{Aug. 2018 -- Dec. 2022}
+  \resumeSubHeadingListEnd
+
+  \begin{comment}
+  \section{Coursework}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Courses}{: Cloud Computing, Embedded Systems, Web Development, Operating Systems \& Architecture, Database Systems, Software Engineering, Data Structures \& Algorithms}
+      \hfill
+    }
+  \resumeSubHeadingListEnd
+  \end{comment}
+
+
+
+%-------------------------------------------
+\end{document}
